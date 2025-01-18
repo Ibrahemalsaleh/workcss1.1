@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Text and Overflow</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .orange-restricted {
+            text-align: center;
+            color: orange;
+            margin-top: 20px;
+        }
+
+        /* Combined Text Styling (From previous example) */
+        .styled-text { /* ... */ }
+        .shadow-text { /* ... */ }
+
+        /* Overflow (From previous example) */
+        .overflow-visible { /* ... */ }
+        .overflow-hidden { /* ... */ }
+        .overflow-scroll { /* ... */ }
+        .overflow-auto { /* ... */ }
+        .overflow-x { /* ... */ }
+        .overflow-y { /* ... */ }
+
+        /* New Section Styles */
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .scrolling-div {
+            width: 400px;
+            height: 150px; /* Added height for scrolling to work */
+            overflow: auto; /* Adds scrollbars if needed */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            border: 1px solid black; /* Added border for better visualization */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Academy</h1>
+        <p style="text-align: center;">powered by Simplon</p>
+
+        <div class="section">
+            <h2>9. Advanced Styling</h2>
+            <p class="underlined">This text is underlined.</p>
+
+            <div class="scrolling-div">
+                <p>Amblyopia (Lazy Eye) is a condition that affects the vision in one eye. It develops when there's a breakdown in how the brain and the eye work together, and the brain starts to favor one eye over the other. This causes the vision in the weaker eye to deteriorate. Amblyopia is the most common cause of decreased vision in a single eye among children. Unless it is successfully treated in early childhood, vision loss usually persists into adulthood.</p>
+                <p>Amblyopia (Lazy Eye) is a condition that affects the vision in one eye. It develops when there's a breakdown in how the brain and the eye work together, and the brain starts to favor one eye over the other. This causes the vision in the weaker eye to deteriorate. Amblyopia is the most common cause of decreased vision in a single eye among children. Unless it is successfully treated in early childhood, vision loss usually persists into adulthood.</p>
+            </div>
+        </div>
+
+        <p class="orange-restricted">Orange Restricted</p>
+    </div>
+</body>
+</html>

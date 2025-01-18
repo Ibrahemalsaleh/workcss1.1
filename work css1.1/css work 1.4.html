@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Text and Overflow</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            overflow: hidden; /* Prevents content from overflowing section borders */
+        }
+
+        .orange-restricted {
+            text-align: center;
+            color: orange;
+            margin-top: 20px;
+        }
+
+        /* Combined Text Styling */
+        .styled-text {
+            color: green;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #000000; /* Add a shadow */
+        }
+
+        .shadow-text {
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Overflow */
+        .overflow-visible {
+            overflow: visible;
+            background-color: lightcoral;
+            height: 100px;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+            background-color: lightblue;
+            height: 100px;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+            background-color: lightgoldenrodyellow;
+            height: 100px;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+            background-color: lightgreen;
+            height: 100px;
+        }
+
+        .overflow-x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            background-color: lightpink;
+            height: 100px;
+        }
+        .overflow-y {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: lightseagreen;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Academy</h1>
+        <p style="text-align: center;">powered by Simplon</p>
+
+        <div class="section">
+            <h2>7. Combined Text Styling</h2>
+            <p class="styled-text">This text should be green color, font 'Arial' and bold</p>
+            <p class="shadow-text">THIS TEXT SHOULD BE FINE I ALSO HAVE SHADOW</p>
+            <p>Tomorrow I will go on a diet</p>
+        </div>
+
+        <div class="section">
+            <h2>8. Overflow</h2>
+            <div class="overflow-visible">
+                <p>eveniet tempore fuga mehnect teget aoba quam prevideat mas magni Mizm, quoden
+                mollina, faella evenie: accmacriun, lato neque providect invece can beatae
+                voluptatum eligendi.</p>
+            </div>
+            <div class="overflow-hidden">
+                <p>You can use the overflow property when you want to have better control of the layouts. The
+                overflow property specifies what happens if content overflows an element's box. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aliquid blanditiis reiciendis in</p>
+            </div>
+            <div class="overflow-scroll">
+                <p>Mem quidem</p>
+            </div>
+            <div class="overflow-auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aliquid blanditiis reiciendis in</p>
+            </div>
+            <div class="overflow-x">
+                <p>This is a long text to demonstrate overflow on the x-axis. This is a long text to demonstrate overflow on the x-axis.</p>
+            </div>
+            <div class="overflow-y">
+                <p>This is a text with multiple lines to demonstrate overflow on the y-axis.<br>Line 2<br>Line 3<br>Line 4<br>Line 5<br>Line 6</p>
+            </div>
+        </div>
+
+        <p class="orange-restricted">Orange Restricted</p>
+    </div>
+</body>
+</html>

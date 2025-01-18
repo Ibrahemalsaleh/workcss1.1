@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Styling</title>
+    <style>
+        body {
+            font-family: sans-serif; /* A default font */
+            line-height: 1.6; /* Improves readability */
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Centers the content */
+        }
+
+        h1, h2 {
+            text-align: center; /* Centers headings */
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc; /* Adds a border around sections */
+        }
+
+        .orange-restricted {
+            text-align: center;
+            color: orange;
+            margin-top: 20px;
+        }
+
+        /* Text Decoration */
+        .overline {
+            text-decoration: overline;
+        }
+
+        .overline-line-through {
+            text-decoration: overline line-through;
+        }
+
+        /* Text Transformation */
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Academy</h1>
+        <p style="text-align: center;">powered by Simplon</p>
+
+        <div class="section">
+            <h2>1. Text Decoration</h2>
+            <p>This Text Decorate Using Overline: <span class="overline">This Text Decorate Using Overline</span></p>
+            <p>This Text Decorate Using Overline-Line-through: <span class="overline-line-through">This Text Decorate Using Overline-Line-through</span></p>
+        </div>
+
+        <div class="section">
+            <h2>2. Text Transformation</h2>
+            <p>Using the text-transform property</p>
+            <p><span class="uppercase">TEXT TO UPPERCASE</span></p>
+            <p><span class="capitalize">this text is capitalized.</span></p>
+        </div>
+
+        <p class="orange-restricted">Orange Restricted</p>
+    </div>
+</body>
+</html>
+    
+
+ 
+        
